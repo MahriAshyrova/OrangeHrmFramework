@@ -357,6 +357,14 @@ public class CommonMethods extends BaseClass {
 		return destination;
 	}
 	
+	public static byte[] takeScreenShot() {
+		TakesScreenshot camera = (TakesScreenshot) driver;
+		byte[] image = camera.getScreenshotAs(OutputType.BYTES);
+		return image;
+	}
+	
+	
+	
 	public static void scrollDown(int pixels) {
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;

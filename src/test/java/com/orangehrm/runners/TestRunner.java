@@ -7,15 +7,15 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class) 
 @CucumberOptions(
-		features="src/test/resources/features/GoogleSearch.feature",
-		glue="com/orangehrm/steps"
+		features="src/test/resources/features",
+		glue="com/orangehrm/stepDefinitions",
+		dryRun=false,
+		monochrome=true,
+		tags= {"@temp"},
+		plugin = {"pretty", "html:target/cucumber-default-reports", "json:target/cucumber.json"} 
 		)
 
 
 public class TestRunner {
 	
-	
-	
-	
-
 }

@@ -1,4 +1,4 @@
-package com.orangehrm.steps;
+package com.orangehrm.stepDefinitions;
 
 import java.util.concurrent.TimeUnit;
 
