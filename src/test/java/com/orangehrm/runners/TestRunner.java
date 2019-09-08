@@ -9,9 +9,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features="src/test/resources/features",
 		glue="com/orangehrm/stepDefinitions",
-		dryRun=false,
+		//dryRun=true,
 		monochrome=true,
-		tags= {"@temp"},
+		tags= {""},
 		plugin = {"pretty", "html:target/cucumber-default-reports", "json:target/cucumber.json"} 
 		)
 

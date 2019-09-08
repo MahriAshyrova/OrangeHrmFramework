@@ -26,7 +26,19 @@ public class HomePage extends BaseClass{
     
     @FindBy(xpath="//span[contains(@class,'left-menu-title') and text()='Locations']")
     public WebElement Location;
-     
+    
+    @FindBy(partialLinkText="Job")
+    public WebElement  Job;
+   
+    @FindBy(partialLinkText="Job Titles")
+    public WebElement  JobTitles;
+    
+    @FindBy(partialLinkText="Qualifications")
+    public WebElement Qualifications;
+    
+    @FindBy(partialLinkText="Skills")
+    public WebElement  Skills;
+    
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}

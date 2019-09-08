@@ -31,9 +31,7 @@ public class ExcelUtility {
 			e.printStackTrace();
 		} catch(IOException e)	{
 			e.printStackTrace();
-		}
-		
-		
+		}	
 	}
 	
 	/**
